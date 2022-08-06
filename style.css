@@ -1,6 +1,7 @@
 * {
   margin: 0;
 }
+
 body {
   margin: 0;
   width: 100%;
@@ -9,7 +10,7 @@ body {
 }
 .container {
   background-color: #4d4de9;
-  padding: 10px 0px 10px 0px;
+  padding: 10px 15px 10px 15px;
   display: flex;
   justify-content: space-between;
 }
@@ -17,14 +18,6 @@ body {
 a {
   color: #f4f4f4;
   text-decoration: none;
-}
-
-.flexbox {
-  padding-left: 190px;
-}
-
-.navbar {
-  padding-right: 120px;
 }
 
 a {
@@ -38,8 +31,8 @@ a {
 }
 
 .introduction {
-  padding-top: 90px;
-  padding-right: 50px;
+  padding-left: 10px;
+  padding-top: 100px;
 }
 
 h1 {
@@ -58,8 +51,7 @@ p {
 
 img {
   width: 200px;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 35px;
 }
 
 .box {
@@ -75,7 +67,7 @@ h2 {
 i {
   margin-right: 10px;
 }
-.alignment {
+.box-style {
   background-color: #0707cfee;
   width: 200px;
   margin: 10px;
@@ -84,20 +76,16 @@ i {
   box-shadow: 2px 2px #535252c9;
 }
 
-.positioning {
-  background-color: #0707cfee;
-  width: 200px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 2px 2px #535252c9;
-}
-
-.design {
-  background-color: #0707cfee;
-  width: 200px;
-  margin: 10px;
-  padding: 10px;
-  border-radius: 5px;
-  box-shadow: 2px 2px #535252c9;
+@media screen and (max-width: 767px) {
+  .content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .box {
+    flex-direction: column;
+    align-items: center;
+  }
+  .introduction {
+    padding-left: 50px;
+  }
 }
